@@ -1,8 +1,10 @@
+import profilePic from "/images/profile.jpg";
+
 export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-content">
-        <img src="/images/profile.jpg" alt="Profile" className="profile-pic" />
+        <img src={profilePic} alt="Profile" className="profile-pic" />
         <div className="text-content">
           <h1 className="name">Renier James Jardio</h1>
           <p className="title">Creative Coder & Aspiring Software Engineer</p>

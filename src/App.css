@@ -193,6 +193,8 @@ body {
   gap: 30px;
   margin-top: 1rem;
   justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 /* Everything in Contact Section */
