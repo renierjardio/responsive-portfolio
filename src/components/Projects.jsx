@@ -6,7 +6,7 @@ export default function Projects() {
       title: "Ballpoint",
       subtitle: "AI-Powered Note-taking Application",
       description:
-        "Designed and prototyped an intuitive AI note-taking app to solve modern-day challenges in organization and productivity. Integrated features like context-aware prompts and AI-generated summaries.",
+        "Designed and prototyped an intuitive AI note-taking app to solve modern-day challenges in organization and productivity.",
       technologies: [
         "Figma",
         "React Native",
