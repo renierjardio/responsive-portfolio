@@ -17,7 +17,7 @@ export default function Skills() {
 
   return (
     <section className="skills">
-      <h2>Skills</h2>
+      <h2 className="header">Skills</h2>
       {Object.entries(skillCategories).map(([category, skills], idx) => (
         <div key={idx}>
           <h3 style={{ color: "white", marginTop: "2rem" }}>{category}</h3>

@@ -6,7 +6,6 @@ export default function Hero() {
         <div className="text-content">
           <h1 className="name">Renier James Jardio</h1>
           <p className="title">Creative Coder & Aspiring Software Engineer</p>
-          <button className="connect-btn">LET'S CONNECT!</button>
 
           <div className="description">
             <p>
@@ -21,6 +20,8 @@ export default function Hero() {
               others to build meaningful digital experiences.
             </p>
           </div>
+
+          <button className="connect-btn">LET'S CONNECT!</button>
         </div>
       </div>
     </section>
