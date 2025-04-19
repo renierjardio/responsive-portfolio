@@ -149,8 +149,9 @@ body {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 20px;
-  column-gap: 20px;
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .project-card:hover {
@@ -197,9 +198,8 @@ body {
 }
 
 .skill-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30px, 40px));
-  gap: 50px;
+  display: flex;
+  gap: 30px;
   margin-top: 1rem;
   justify-content: center;
 }
@@ -256,13 +256,140 @@ body {
   filter: drop-shadow(0 0 4px #fff);
 }
 
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
+/* For tablets (portrait & landscape, 768px - 1024px) */
+@media (max-width: 1024px) {
+  .header.projects {
+    justify-content: center;
+    text-align: center;
+    padding-left: 0;
   }
 
-  .skill-grid,
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+    height: auto;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .profile-pic {
+    width: 250px;
+    height: 250px;
+  }
+
+  .name {
+    font-size: 2.2rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    max-width: 600px;
+  }
+
   .project-grid {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .skill-grid {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .navbar-container {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .navbar-links {
+    gap: 30px;
+    align-items: center;
+    padding: 1rem 0;
+  }
+}
+
+/* For mobile phones (landscape and portrait, <= 768px) */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .header {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .header.projects {
+    justify-content: center;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  .description {
+    max-width: 400px;
+  }
+
+  .project-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(auto-fit, minmax(40px, 60px));
+    gap: 20px;
+  }
+}
+
+/* For very small devices (phones <= 480px) */
+@media (max-width: 480px) {
+  .connect-btn {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .contact form {
+    width: 90%;
+  }
+
+  .social-icons a {
+    font-size: 1.5rem;
+  }
+
+  .header.projects {
+    padding-left: 10px;
+  }
+
+  .project-card {
+    width: 90%;
+    margin: 0 auto;
   }
 }
