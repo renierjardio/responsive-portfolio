@@ -23,6 +23,6 @@ Follow these steps to run the project locally:
 ### Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/portfolio.git
-cd portfolio
+git clone https://github.com/yourusername/responsive-portfolio.git
+cd responsive-portfolio
 ```
