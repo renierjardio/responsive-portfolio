@@ -161,10 +161,23 @@ body {
 .technologies span {
   background-color: #233554;
   color: #8892b0;
-  padding: 0.3rem 0.6rem;
+  padding: 0.1rem 0.4rem;
   margin: 0.2rem;
   border-radius: 4px;
   font-size: 0.8rem;
+}
+
+.github-icon {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #ccc;
+  font-size: 1.2rem;
+}
+
+.github-icon:hover {
+  color: white;
+  filter: drop-shadow(0 0 4px #ccc);
 }
 
 /* Skills Section */
