@@ -20,7 +20,7 @@ export default function Skills() {
       <h2 className="header">Skills</h2>
       {Object.entries(skillCategories).map(([category, skills], idx) => (
         <div key={idx}>
-          <h3 style={{ color: "white", marginTop: "2rem" }}>{category}</h3>
+          <h3 className="category-header">{category}</h3>
           <div className="skill-grid">
             {skills.map((skill, i) => (
               <div key={i} className="skill-card icon-only">
