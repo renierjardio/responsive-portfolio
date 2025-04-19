@@ -184,15 +184,23 @@ body {
   font-family: "Courier New", Courier, "Lucida Console", monospace;
 }
 
-.github-icon {
+.project-links {
   position: absolute;
+  left: 20px;
   bottom: 10px;
-  left: 10px;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.external-link,
+.github-icon {
   color: #ccc;
   font-size: 1.2rem;
 }
 
-.github-icon:hover {
+.github-icon:hover,
+.external-link:hover {
   color: white;
   filter: drop-shadow(0 0 4px #ccc);
 }

@@ -1,4 +1,4 @@
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaGlobe } from "react-icons/fa";
 
 export default function Projects() {
   const projectsData = [
@@ -15,6 +15,7 @@ export default function Projects() {
         "Django",
         "AI Integration",
       ],
+      deployedLink: "",
       githubLink: "https://github.com/Loweso/ballpoint",
     },
     {
@@ -23,6 +24,7 @@ export default function Projects() {
       description:
         "Recreated the classic Pokémon gameplay using C++ and SFML. Implemented file-saving features for persistent game data.",
       technologies: ["C++", "SFML", "Game Development"],
+      deployedLink: "",
       githubLink: "",
     },
     {
@@ -38,6 +40,7 @@ export default function Projects() {
         "Sequelize",
         "MySQL",
       ],
+      deployedLink: "",
       githubLink: "https://github.com/Loweso/doorm",
     },
     {
@@ -54,6 +57,7 @@ export default function Projects() {
       description:
         "Created a pixel-art RPG in Python using PyGame. Integrated basic AI and dynamic narrative storytelling.",
       technologies: ["Python", "PyGame", "Pixel Art", "Game Design"],
+      deployedLink: "",
       githubLink: "https://github.com/Loweso/paper-townsman",
     },
     {
@@ -61,7 +65,38 @@ export default function Projects() {
       subtitle: "Line-Following Robot",
       description:
         "Engineered a logic-gated robot using AND, OR, NOT gates. Awarded Champions in a robotics racetrack competition.",
+      deployedLink: "",
       technologies: ["Logic Gates", "Robotics", "Electronics"],
+    },
+    {
+      title: "99: The Card Duel",
+      subtitle: "Web Application, Game Development",
+      description:
+        "Developed a web-based card game, incorporating a Minimax algorithm with alpha-beta pruning for AI decision-making to create a competitive, turn-based gameplay experience.",
+      technologies: [
+        "TypeScript",
+        "JavaScript",
+        "Tailwind CSS",
+        "Minimax Algorithm",
+      ],
+      deployedLink: "https://99-ten.vercel.app/",
+      githubLink: "https://github.com/arwin50/99",
+    },
+    {
+      title: "FireTrack",
+      subtitle: "Web Application",
+      description:
+        "Conceptualized, designed, and developed a web application for firefighters and admin staff to monitor deployment of firetrucks and human resources in times of emergencies.",
+      technologies: [
+        "Vue",
+        "TypeScript",
+        "Tailwind CSS",
+        "Nuxt.js",
+        "Django",
+        "Robotics",
+      ],
+      deployedLink: "https://firetrack-plum.vercel.app/",
+      githubLink: "https://github.com/Christineeebagz/Team-Litson",
     },
   ];
 
@@ -84,7 +119,17 @@ export default function Projects() {
               </div>
             </div>
 
-            <div>
+            <div className="project-links">
+              {project.deployedLink && (
+                <a
+                  href={project.deployedLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="external-link"
+                >
+                  <FaGlobe />
+                </a>
+              )}
               {project.githubLink && (
                 <a
                   href={project.githubLink}
