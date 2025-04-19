@@ -54,7 +54,7 @@ export default function Contact() {
         </a>
       </div>
 
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
         <input type="text" placeholder="Your Name" required />
         <input type="email" placeholder="Your Email" required />
         <textarea placeholder="Your Message" required></textarea>
