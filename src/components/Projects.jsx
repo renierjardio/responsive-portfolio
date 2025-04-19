@@ -4,7 +4,7 @@ export default function Projects() {
   const projectsData = [
     {
       title: "Ballpoint",
-      subtitle: "AI-Powered Note-taking Application",
+      subtitle: "AI-Powered Note-taking Mobile Application",
       description:
         "Designed and prototyped an intuitive AI note-taking app to solve modern-day challenges in organization and productivity.",
       technologies: [
