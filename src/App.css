@@ -504,11 +504,13 @@ body {
     color: #444;
   }
 
-  .github-icon {
+  .github-icon,
+  .external-link {
     color: #444;
   }
 
-  .github-icon:hover {
+  .github-icon:hover,
+  .external-link:hover {
     color: black;
   }
 
