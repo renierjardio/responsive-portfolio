@@ -72,7 +72,7 @@ export default function Projects() {
       title: "99: The Card Duel",
       subtitle: "Web Application, Game Development",
       description:
-        "Developed a web-based card game, incorporating a Minimax algorithm with alpha-beta pruning for AI decision-making to create a competitive, turn-based gameplay experience.",
+        "Developed a web-based card game, incorporating AI decision-making to create a competitive, turn-based gameplay experience.",
       technologies: [
         "TypeScript",
         "JavaScript",
