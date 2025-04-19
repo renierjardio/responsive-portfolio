@@ -64,12 +64,25 @@ body {
   animation: fadeIn 2s ease-in;
 }
 
+.profpic-wrapper {
+  display: inline-block;
+  filter: drop-shadow(0 0 6px #ccc);
+}
+
 .profile-pic {
   width: 350px;
   height: 350px;
   object-fit: cover;
-  border-radius: 25%;
-  filter: drop-shadow(0 0 6px #ccc);
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
 }
 
 .name {
@@ -448,6 +461,11 @@ body {
   .skills,
   .contact {
     color: black;
+  }
+
+  .profpic-wrapper {
+    display: inline-block;
+    filter: drop-shadow(0 0 6px grey);
   }
 
   .title,
