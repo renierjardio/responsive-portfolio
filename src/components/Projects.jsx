@@ -76,7 +76,7 @@ export default function Projects() {
               {project.subtitle && (
                 <h4 className="project-subtitle">{project.subtitle}</h4>
               )}
-              <p>{project.description}</p>
+              <p className="project-description">{project.description}</p>
               <div className="technologies">
                 {project.technologies.map((tech, techIndex) => (
                   <span key={techIndex}>{tech}</span>
