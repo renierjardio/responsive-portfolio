@@ -17,13 +17,44 @@ body {
   margin-bottom: 10px;
 }
 
+.content-offset {
+  padding-top: 70px; /* Adjust based on navbar height */
+}
+
+/* Navbar Section */
+.navbar-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: grey;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: white;
+  filter: drop-shadow(0 0 4px #ccc);
+}
+
 /* Everything in Hero Section */
 .hero {
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
   padding: 1rem;
 }
 
@@ -176,6 +207,7 @@ body {
 /* Everything in Contact Section */
 .contact {
   text-align: center;
+  margin-bottom: 8rem;
 }
 
 .contact form {
@@ -196,14 +228,32 @@ body {
 .contact button {
   padding: 0.8rem;
   border: none;
-  background: #007bff;
+  background: #050f73;
   color: white;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 .contact button:hover {
-  background: #0056b3;
+  background: #02084d;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-icons a {
+  font-size: 1.8rem;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #040e80;
+  filter: drop-shadow(0 0 4px #fff);
 }
 
 @media (max-width: 768px) {
